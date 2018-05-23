@@ -55,6 +55,7 @@ p{
 }
 ol{
   list-style-type: none;
+  padding-left: 0;
 }
 #sidebar {
   background-color: #384047;
@@ -62,10 +63,17 @@ ol{
   left: 0px;
   top: 0px;
   bottom: 0px;
-  width: 120px;
+  width: 80px;
   text-align: center;
   padding: 30px;
+
 }
 #page-content {
-  margin-left: 300px;
+  margin-left: 150px;
+}
+
+.banner{background-image: url("https://picsum.photos/1000/500");
+  height: 100vh;
+  text-align: center;
+  background-position: center;
 }
