@@ -30,7 +30,7 @@ a{
 }
 .container {
   width: 700px;   /* This sets the width */
-  margin: 0 auto; /* This automatically sets left/right margins */
+  margin: auto; /* This automatically sets left/right margins */
 }
 p{
   text-align:justify;

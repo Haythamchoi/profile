@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -13,18 +15,59 @@
 </head>
 
 <body>
-  <div class="car">
-    <div class="container">
-      <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
-        <div class="banner-content">
-          <h1>Le Wagon Berlin</h1>
-          <p>Learn to code with us in Berlin</p>
-          <a class="btn btn-primary btn-lg">Start now</a>
+  <!-- <div id="sidebar">
+    <ol>
+      <li><a href="#summary"><i class="fas fa-3x fa-info-circle"></i></a><br/><br></li>
+      <li><a href="#branchesofidentity"><i class="fas fa-3x fa-code-branch"></i></a></li>
+    </ol>
+  </div> -->
+  <div class="navbar-wagon">
+    <!-- Logo -->
+    <!-- <a href="/" class="navbar-wagon-brand">
+      <img src="images/Headshot.jpg" alt="logo">
+    </a> -->
+
+    <!-- Right Navigation -->
+    <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+      <!-- <a href="" class="navbar-wagon-item navbar-wagon-link">Host</a>
+      <a href="" class="navbar-wagon-item navbar-wagon-link">Trips</a>
+      <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a> -->
+
+      <!-- Profile picture with dropdown list -->
+      <div class="navbar-wagon-item">
+        <div class="dropdown">
+          <img src="/images/Headshot.jpg" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Profile</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="card">
-      <img src="images/headshot.jpg" id="img-profile" class="img-circle" alt="A headshot of me">
+
+    <!-- Dropdown appearing on mobile only -->
+    <div class="navbar-wagon-item hidden-md hidden-lg">
+      <div class="dropdown">
+        <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card" id="summary">
+      <img src="images/Headshot.jpg" id="img-profile" class="img-circle" alt="A headshot of me">
       <h1>Jason Everaert</h1>
       <h2>Aspiring Programmer</h2>
       <p>I am starting out as a developer, and am hoping to be able to improve my skills. Once completing Le Wagon, I hope to
@@ -32,30 +75,54 @@
       </p>
     </div>
     <div class="card">
-      <ul class="list-inline">
+      <ol class="list-inline">
         <li>
           <a href="https://github.com/Eventlessdrop">
             <i class="fab fa-3x fa-github"></i>
-          </a>
+            <br/>Github</a>
         </li>
         <li>
           <a href="https://www.facebook.com/jason.everaert">
             <i class="fab fa-3x fa-facebook-square"></i>
-          </a>
+            <br/>Facebook</a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/jason-everaert/">
             <i class="fab fa-3x fa-linkedin"></i>
-          </a>
+            <br/>LinkedIn</a>
         </li>
         <li>
           <a href="https://www.instagram.com/everereraert/">
             <i class="fab fa-3x fa-instagram"></i>
-          </a>
+            <br/>Instagram</a>
         </li>
-      </ul>
+        <li>
+          <a href="https://www.goodreads.com/user/show/33315919-jason-everaert">
+            <i class="fab fa-3x fa-goodreads"></i>
+            <br/>GoodReads</a>
+        </li>
+      </ol>
     </div>
-    <div class="card">
+    <!-- <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <select name="" id="">
+          <option value="">hi</option>
+          <option value="">hi</option>
+          <option value="">asd</option>
+        </select>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div> -->
+    <div class="card" id="branchesofidentity">
       <h2>Branches of Identity</h2>
       <table>
         <tr>
@@ -131,10 +198,38 @@
         </tr>
       </table>
     </div>
-    <div class="map">
+    <div class='Map'>
       <iframe src="https://www.google.com/maps/d/embed?mid=1goVoWgRfCqEx6C9hdobwB-t23BzXskum" width="700" height="480"></iframe>
     </div>
   </div>
+
+  <div class="footer">
+    <div class="footer-links">
+      <a href="#">
+        <i class="fa fa-github"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </div>
+    <div class="footer-copyright">
+      This footer is made with
+      <i class="fa fa-heart"></i> at Le Wagon
+    </div>
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
