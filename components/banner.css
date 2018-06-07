@@ -2,7 +2,7 @@
   color: rgb(255, 255, 255);
   background-color:#EEEEEE;
   text-align: center;
-  height: 90vh;
+  height: calc(100vh - 70px);
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
